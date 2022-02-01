@@ -1,2 +1,1 @@
-# JavaScript-programs-examples
-some of javascript programs for fun!
+This is a script file for generate a login form, and check the form to validate and if form was not valid, do not let user to submit form.
