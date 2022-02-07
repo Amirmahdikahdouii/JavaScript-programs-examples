@@ -3,10 +3,12 @@ Hi! thanks for seeing this repository and hope you enjor it!
  Tip : Add the begginings of any exercise, there are some comments for that exercise to how to use it with id and classes adding to html file
  
  
- #Exercise 1:
+<h1> #Exercise 1: </h1>
+ 	<pre>
  	In this Exercise, you don't need to add any elements to your HTML File, just import script.js file to your HTML file and boom! it's all done.
 	this script file can generate a Login form for you and there are some method at the end of the file that can check form validation befor user
 	submit the form.
+	</pre>
 	
 #Exercise 2:
 	In this Exercise, there are some class and id attribute that you should add to your HTML file elements. in the beggining of the file there are some comments 
