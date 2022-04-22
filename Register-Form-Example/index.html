@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a new account</title>
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h1 class="register-form-logo">Coffe Shop</h1>
+        <form action="" method="get" class="register-form">
+
+            <input type="text" name="username" id="username" class="register-form-input"
+                placeholder="Enter your User Name">
+            <label class="warning-lable">unvalid username!</label>
+
+            <input type="password" name="password" id="password" class="register-form-input"
+                placeholder="Enter your Password">
+            <label class="warning-lable"></label>
+
+            <input type="password" name="re-password" id="re-password" class="register-form-input"
+                placeholder="Re-Enter your Password">
+            <label class="warning-lable"></label>
+
+            <input type="email" name="email" id="email" class="register-form-input" placeholder="Enter your E-Mail">
+            <label class="warning-lable">E-Mail is not valid!</label>
+
+            <input type="text" name="name" id="name" class="register-form-input" placeholder="Enter your Name">
+            <label class="warning-lable">Name Should be over 2 character</label>
+
+            <input type="text" name="familyName" id="familyName" class="register-form-input"
+                placeholder="Enter your Family Name">
+            <label class="warning-lable">Family Name Should be over 2 character</label>
+
+            <input type="text" name="fatherName" id="fatherName" class="register-form-input"
+                placeholder="Enter your Father Name">
+            <label class="warning-lable">Father Name Should be over 2 character</label>
+
+            <input type="number" name="age" id="age" class="register-form-input" placeholder="Enter your Age" min="10"
+                max="110">
+            <label class="warning-lable">Age Should Be over 18</label>
+
+            <label class="warning-lable">Please Check all the Fields</label>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
