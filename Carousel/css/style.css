@@ -1,0 +1,149 @@
+@font-face {
+    font-family: visit-link;
+    src: url("../font/HindSiliguri-Light.ttf");
+}
+
+@font-face {
+    font-family: header-title;
+    src: url("../font/LibreFranklin-Light.ttf");
+}
+
+@font-face {
+    font-family: description;
+    src: url("../font/Nunito-Regular.ttf");
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../img/Backround/isai-ramos-_3SFFsWqCVg-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-conatiner {
+    margin: 1% auto;
+    border-radius: 10px;
+    background-color: rgba(8, 32, 50, .7);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-items-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    width: 900px;
+    height: 600px;
+    margin: 1% 0;
+    display: none;
+}
+
+.carousel-item-active {
+    display: flex;
+    transition: opacity 2s;
+}
+
+@keyframes displayOffCarousel {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes displayOnCarousel {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-item-image,
+.carousel-item-image-dark-theme {
+    z-index: -2;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.carousel-item-image-dark-theme {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.change-carousel-items-button {
+    border: none;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #ddd;
+    cursor: pointer;
+    font-family: visit-link;
+    border-radius: 7px;
+}
+
+.carousel-item-info-container {
+    margin: 2% auto auto 2%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+}
+
+.carousel-item-title {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: header-title;
+}
+
+.carousel-item-description {
+    margin: 1% 0;
+    color: #eee;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: description;
+}
+
+.carousel-item-visit-button {
+    width: fit-content;
+    padding: 2% 5%;
+    color: #1B2430;
+    background-color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: visit-link;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.carousel-item-visit-button:hover {
+    color: white;
+    background-color: #1B2430;
+}
