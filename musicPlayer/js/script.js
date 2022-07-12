@@ -85,12 +85,22 @@ music.addEventListener("timeupdate", () => {
 
 // Event Handler for click on play next button
 const playNextSongMethod = () => {
-    musicIndex++;
-    if (musicIndex + 1 > dataMaxLength) {
-        musicIndex = 0;
+    if (randomPlay) {
+        let randomNumberIndex = Math.floor(Math.random() * dataMaxLength);
+        while (randomNumberIndex == musicIndex) {
+            randomNumberIndex = Math.floor(Math.random() * dataMaxLength)
+        }
+        musicIndex = randomNumberIndex;
+        changeMusicMethod(randomNumberIndex);
+        automaticPlayPauseButtonChange();
+    } else {
+        musicIndex++;
+        if (musicIndex + 1 > dataMaxLength) {
+            musicIndex = 0;
+        }
+        changeMusicMethod(musicIndex);
+        automaticPlayPauseButtonChange();
     }
-    changeMusicMethod(musicIndex);
-    automaticPlayPauseButtonChange();
 }
 nextTrackButton.addEventListener("click", playNextSongMethod)
 
