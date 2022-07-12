@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: header-title;
+    src: url('../fonts/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: music-name;
+    src: url('../fonts/HindSiliguri-Light.ttf');
+}
+
+body {
+    background-image: url("../img/body-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.player-main-container {
+    width: 30%;
+    height: 600px;
+    background-color: #293462;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-player-body {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.music-player-header-navbar {
+    margin: 1% auto;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0;
+    border-bottom: 1px solid rgb(67, 81, 136);
+}
+
+#music-player-header-backBottom,
+#music-player-header-menuBottom,
+#music-playlist-icon,
+#music-like-icon,
+#music-liked-icon,
+#skip-previous-track-button,
+#play-random-button,
+#repeat-track,
+#skip-next-track-button,
+#play-song-button,
+#pause-song-button {
+    width: 20px;
+    height: 20px;
+    font-weight: bolder;
+    color: #F24C4C;
+    cursor: pointer;
+}
+
+.music-player-header-title {
+    font-weight: bold;
+    font-size: 17px;
+    font-family: header-title;
+    color: #F24C4C;
+}
+
+.music-image-container {
+    margin: 2% auto;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.music-image {
+    border-radius: 50%;
+}
+
+.music-icons-container {
+    margin: 1% auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#music-liked-icon {
+    display: none;
+}
+
+.music-timer-container {
+    margin: 3% auto 0;
+    width: 90%;
+    height: 10px;
+    display: flex;
+}
+
+#music-audio {
+    display: none;
+}
+
+.music-timer-line,
+.music-timer-passed {
+    display: inline;
+    height: 2px;
+    background-color: #F24C4C;
+}
+
+.music-timer-line {
+    width: 100%;
+}
+
+.music-timer-passed {
+    background-color: #F7D716;
+}
+
+.music-time-container {
+    margin: 1% auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-time {
+    font-size: 15px;
+    color: #EC9B3B;
+    font-weight: bold;
+    font-family: header-title;
+}
+
+.music-info-container {
+    margin: 1% auto 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-name,
+.music-artist-name {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: music-name;
+    color: #F24C4C;
+}
+
+.music-artist-name {
+    font-size: 15px;
+    color: #EC9B3B;
+}
+
+#pause-song-button {
+    display: none;
+}
+
+.music-control-icons-container {
+    margin: 4% auto 1%;
+}
+
+#play-song-button,
+#pause-song-button {
+    color: #EC9B3B;
+}
+
+.music-list-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    overflow-y: auto;
+}
+
+.music-item-container {
+    width: 90%;
+    margin: 1% auto;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-item-container-active {
+    border-radius: 10px;
+    border: 1px solid #F24C4C;
+
+}
+
+.music-list-image-container {
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 5px;
+}
+
+.music-item-image {
+    border-radius: 5px;
+}
+
+.music-list-info-container {
+    width: 70%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.music-item-name {
+    color: #EC9B3B;
+    margin: 1% 0;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: music-name;
+    cursor: pointer;
+}
+
+.music-item-singer,
+.music-item-album,
+.music-item-timer {
+    color: #F7D716;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: music-name;
+}
+
+.music-item-container-active>.music-list-info-container>.music-item-name {
+    color: #F24C4C;
+}
