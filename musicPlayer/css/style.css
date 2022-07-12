@@ -7,12 +7,12 @@
 
 @font-face {
     font-family: header-title;
-    src: url('../fonts/Manrope-Light.ttf');
+    src: url('../font/Manrope-Light.ttf');
 }
 
 @font-face {
     font-family: music-name;
-    src: url('../fonts/HindSiliguri-Light.ttf');
+    src: url('../font/HindSiliguri-Light.ttf');
 }
 
 body {
