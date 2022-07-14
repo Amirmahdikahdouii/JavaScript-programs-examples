@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: carousel-title;
+    src: url("../fonts/HindSiliguri-Light.ttf");
+}
+
+@font-face {
+    font-family: carousel-text;
+    src: url("../fonts/Manrope-Light.ttf");
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../img/milad-fakurian-RlZrYad5IKk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 80%;
+    height: 500px;
+    margin: 2% auto;
+    justify-content: space-between;
+}
+
+.change-carousel-items-button {
+    border: none;
+    padding: 2.5%;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.change-carousel-items-button:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.carousel-items-container {
+    width: 85%;
+    margin: 0 auto;
+    height: 500px;
+    max-height: 500px;
+}
+
+@keyframes hideSlider {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes showSlider {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-item-container {
+    margin: 0 auto;
+    display: none;
+    width: 800px;
+    height: 100%;
+    border-radius: 10px;
+    animation-name: hideSlider;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.carousel-item-container-active {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation-name: showSlider;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+.carousel-item-image {
+    z-index: -3;
+    position: absolute;
+    width: 800px;
+    max-width: 100%;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.carousel-item-image-dark-theme {
+    width: 800px;
+    height: 500px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.carousel-item-info-container {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.carousel-item-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: carousel-title;
+}
+
+.carousel-item-text {
+    margin: 2% 0;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    width: 100%;
+    font-family: carousel-text;
+}
+
+.carousel-item-button {
+    margin: 1% 0;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    padding: 3% 7%;
+    color: #000;
+    background-color: rgba(255, 255, 255, .9);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: carousel-title;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.carousel-item-button:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+}
