@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../img/albulena-panduri-68mX-vp4H6c-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+}
+
+.change-slider-items-button {
+    border: none;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slider-items-container {
+    width: 80%;
+    height: 500px;
+}
+
+@keyframes hideslider {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes showslider {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slider-item {
+    display: none;
+    width: 100%;
+    height: 500px;
+    animation-name: hideslider;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1500ms;
+}
+
+.slider-item-active {
+    display: block;
+    animation-name: showslider;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1500ms;
+}
+
+.slider-item-image {
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}

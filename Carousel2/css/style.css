@@ -96,9 +96,7 @@ body {
     animation-name: hideSlider;
     animation-duration: 1500ms;
     animation-iteration-count: 1;
-    animation-direction: normal;
     animation-fill-mode: forwards;
-    opacity: 0;
 }
 
 .carousel-item-container-active {
@@ -108,9 +106,7 @@ body {
     animation-name: showSlider;
     animation-duration: 1500ms;
     animation-iteration-count: 1;
-    animation-direction: normal;
     animation-fill-mode: forwards;
-    opacity: 1;
 }
 
 .carousel-item-image {
