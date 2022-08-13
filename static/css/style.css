@@ -69,6 +69,7 @@ body {
     width: 95%;
     display: grid;
     grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
     justify-content: space-between;
     gap: 10px;
 }
@@ -113,4 +114,103 @@ body {
     color: #42C2FF;
     font-weight: normal;
     font-size: 15px;
+}
+
+@media screen and (max-width:1000px) {
+    .project-items-section {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 300px);
+    }
+
+    .project-item-container {
+        width: 250px;
+        height: 300px;
+    }
+
+    .project-item-image-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .project-items-section {
+        margin-top: 60px;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: space-around;
+    }
+
+    .project-item-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-item-image-container {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header-menu-items-container {
+        display: none;
+    }
+
+    .project-items-section {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: space-around;
+    }
+
+    .project-item-container {
+        width: 250px;
+        height: 300px;
+    }
+
+    .project-item-image-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project-items-section {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .project-item-container {
+        width: 400px;
+        height: 300px;
+    }
+
+    .project-item-image-container {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project-items-section {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .project-item-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-item-image-container {
+        width: 200px;
+        height: 200px;
+    }
 }
