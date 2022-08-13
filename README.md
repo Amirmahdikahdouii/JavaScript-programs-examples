@@ -5,4 +5,6 @@
 <li>Reminder</li>
 <li>TODO App</li>
 <li>Random Color generator</li>
+<li>Multi Step Form</li>
+<li>Calculator</li>
 </ol>
