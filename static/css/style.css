@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: title;
+    src: url("../font/HindSiliguri-Light.ttf");
+}
+
+@font-face {
+    font-family: menu-item;
+    src: url("../font/RobotoCondensed-Regular.ttf");
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("../img/background/index-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section {
+    padding: 2% 0;
+    width: 100%;
+    background-color: #EFFFFD;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-title {
+    color: #42C2FF;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: title;
+}
+
+.header-menu-items-container {
+    max-width: 60%;
+    min-width: 40%;
+    padding: 0 1%;
+    margin: 1% 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-menu-item {
+    margin: 0 15px;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: menu-item;
+    color: #42C2FF;
+}
+
+.project-items-section {
+    margin: 100px auto 20px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.project-item-container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EFFFFD;
+    border-radius: 10px;
+}
+
+.project-item-image-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.project-item-cover {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-item-name,
+.project-item-text {
+    margin: 1% auto;
+    width: 80%;
+    color: #42C2FF;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: title;
+    justify-self: flex-start;
+}
+
+.project-item-text {
+    color: #42C2FF;
+    font-weight: normal;
+    font-size: 15px;
+}
